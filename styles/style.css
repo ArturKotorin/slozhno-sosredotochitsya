@@ -193,22 +193,12 @@
   outline: 1px solid currentColor;
 }
 
-.section {
-  display: grid;
-  gap: 20px;
-}
-
 .section-gallery {
   gap: 10px;
 }
 
 .third__section__title {
   margin-block-end: 20px;
-}
-
-.article__list {
-  display: grid;
-  gap: 20px;
 }
 
 .gallery__list {
