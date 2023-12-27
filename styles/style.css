@@ -36,16 +36,12 @@
   position: relative;
 }
 
-.decorated-zone::before,
-.decorated-zone::after {
+.decorated-zone::before {
   content: "";
   position: absolute;
   z-index: -1;
   inline-size: 25px;
   block-size: 25px;
-}
-
-.decorated-zone::before {
   border-inline-end: 1px solid var(--secondary-color, #ff0070);
   border-block-start: 1px solid var(--secondary-color, #ff0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
@@ -53,6 +49,11 @@
 }
 
 .decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
   border-inline-start: 1px solid var(--secondary-color, #ff0070);
   border-block-end: 1px solid var(--secondary-color, #ff0070);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
@@ -88,7 +89,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: 65px;
+  margin-block: 65px 10px;
 }
 
 .header__theme-menu-list {
@@ -134,7 +135,6 @@
 }
 
 .header__subtitle {
-  margin-block: 55px;
   color: var(--highlight-color, #000028);
   font-weight: 700;
   font-size: inherit;
@@ -271,7 +271,7 @@
 
   .header__theme-menu {
     margin-block-start: 170px;
-    margin-block-end: 70px;
+    margin-block-end: 15px;
   }
 
   .header__subtitle {
@@ -302,7 +302,7 @@
     justify-self: center;
     margin-inline-start: 20px;
     margin-block-start: 0;
-    margin-block-end: 215px;
+    margin-block-end: 160px;
   }
 
   .header__theme-menu-list {
